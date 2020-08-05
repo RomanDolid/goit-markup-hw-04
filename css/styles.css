@@ -9,6 +9,8 @@
   --second-border-colo: #afb1b8;
   --portfolio-border-color: #eeeeee;
   --beck-futer-color: #2f303a;
+  --hover-color-link: rgba(255, 255, 255, 0.1);
+  --futer-borber: rgba(255, 255, 255, 0.3);
 }
 
 html {
@@ -57,6 +59,10 @@ body {
 .auth-nav {
   display: flex;
 }
+.auth-nav .link {
+  display: flex;
+  align-items: center;
+}
 .contakts {
   margin-left: auto;
 }
@@ -96,8 +102,6 @@ body {
 .logo:hover,
 .list .link:hover,
 .list .link:focus,
-.contakts .link:hover,
-.contakts .link:focus,
 .futer-nav .logo:hover {
   color: var(--accent-color);
 }
@@ -112,12 +116,30 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.mail-icon {
+  width: 16px;
+  height: 11px;
+  fill: var(--title-text-color);
+  margin-right: 10px;
+}
+.mail-icon:hover {
+  fill: var(--accent-color);
+}
+
+.tel-icon {
+  width: 10px;
+  height: 15px;
+  fill: var(--title-text-color);
+  margin-right: 10px;
+}
+.tel-icon:hover {
+  fill: var(--accent-color);
+}
 
 .hero {
   text-align: center;
   margin-top: 0;
   margin-bottom: 93px;
-
 }
 
 .hero-img {
@@ -188,7 +210,10 @@ body {
   background-color: var(--beck-btn-portfolio);
   margin-bottom: 30px;
 }
-
+.icone .icon {
+  width: 70px;
+  height: 70px;
+}
 .advantage .title,
 .futer-link .title,
 .foter-account .title {
@@ -222,7 +247,9 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
 }
-
+img {
+  display: block;
+}
 .our-work {
   display: flex;
 }
@@ -235,7 +262,9 @@ body {
 .our-team .item + .item {
   margin-left: 30px;
 }
-
+.my-link .item + .item {
+  margin-left: 10px;
+}
 .my-link {
   display: flex;
   justify-content: space-between;
@@ -270,6 +299,10 @@ body {
   width: 270px;
   text-align: center;
   padding-bottom: 24px;
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-persons {
@@ -297,8 +330,26 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.my-link .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--second-border-colo);
+}
+.my-link .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.my-link .icon:hover {
+  fill: var(--primary-white-color);
+}
+.my-link .item:hover {
+  background-color: var(--accent-color);
+}
 
-.team .link:hover,
 .futer-link .link:hover {
   background-color: var(--accent-color);
 }
@@ -323,6 +374,42 @@ body {
 
 .clients .logo-clients:hover {
   border-color: var(--accent-color);
+}
+.client1 {
+  width: 44px;
+  height: 49px;
+  fill: var(--second-border-colo);
+}
+.client2 {
+  width: 40px;
+  height: 52px;
+  fill: var(--second-border-colo);
+}
+.client3 {
+  width: 41px;
+  height: 43px;
+  fill: var(--second-border-colo);
+}
+
+.client4 {
+  width: 80px;
+  height: 42px;
+  fill: var(--second-border-colo);
+}
+.client5 {
+  width: 59px;
+  height: 47px;
+  fill: var(--second-border-colo);
+}
+.client6 {
+  width: 89px;
+  height: 45px;
+  fill: var(--second-border-colo);
+}
+
+.logo-clients .icon:hover,
+.logo-clients .icon:focus {
+  fill: var(--accent-color);
 }
 
 .main-futr-nav {
@@ -375,39 +462,71 @@ body {
   width: 206px;
 }
 
-.futer-link .link {
+/* .futer-link .link {
   text-decoration: none;
+} */
+.our-link .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.our-link .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--hover-color-link);
 }
 .our-link {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
+.our-link .item:hover{
+  background-color: var(--accent-color);
+}
 
 .futer-btn {
+  
+  display: flex;
   margin-top: 20px;
+  flex-direction: row
 }
 .windows {
   width: 358px;
+  height: 50px;
   border-radius: 4px;
   text-align: left;
   padding-left: 10px;
   padding-top: 14px;
   padding-bottom: 14px;
   margin-right: 12px;
-
+  border: 1px solid var(--futer-borber);
+  box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  background-color: var(--beck-futer-color);
+  color: var(--accent-futer-color);
 }
-
+.fly {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}
 .btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   min-width: 200px;
+  height: 50px;
   border-radius: 4px;
   padding: 10px 29px;
-
+  border: none;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
