@@ -7,8 +7,8 @@
   --logo-color: #000000;
   --beck-btn-portfolio: #f5f4fa;
   --second-border-colo: #afb1b8;
-  --portfolio-border-color: #EEEEEE;
-  --beck-futer-color: #2F303A;
+  --portfolio-border-color: #eeeeee;
+  --beck-futer-color: #2f303a;
 }
 
 html {
@@ -117,7 +117,26 @@ body {
   text-align: center;
   margin-top: 0;
   margin-bottom: 93px;
+
 }
+
+.hero-img {
+  padding-top: 153px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--title-text-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/Header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .advantage,
 .operations,
 .team,
@@ -126,11 +145,10 @@ body {
   margin-bottom: 94px;
 }
 .hero-title {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 26px;
 
   color: var(--primary-white-color);
-  background-color: var(--title-text-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -450,7 +468,6 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid var(--portfolio-border-color);
-
 }
 .flex-list .item:nth-child(3n) {
   margin-right: 0;
