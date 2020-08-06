@@ -29,6 +29,19 @@ body {
 
   font-family: "Roboto", sans-serif;
 }
+img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -41,6 +54,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  align-items: center;
 }
 
 .site-nav {
@@ -58,6 +72,7 @@ body {
 
 .auth-nav {
   display: flex;
+
 }
 .auth-nav .link {
   display: flex;
@@ -119,22 +134,18 @@ body {
 .mail-icon {
   width: 16px;
   height: 11px;
-  fill: var(--title-text-color);
+  fill: currentColor;
   margin-right: 10px;
 }
-.mail-icon:hover {
-  fill: var(--accent-color);
-}
+
 
 .tel-icon {
   width: 10px;
   height: 15px;
-  fill: var(--title-text-color);
+  fill: currentColor;
   margin-right: 10px;
 }
-.tel-icon:hover {
-  fill: var(--accent-color);
-}
+
 
 .hero {
   text-align: center;
@@ -142,7 +153,7 @@ body {
   margin-bottom: 93px;
 }
 
-.hero-img {
+.hero {
   padding-top: 153px;
   height: 600px;
   max-width: 1600px;
@@ -247,9 +258,7 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
 }
-img {
-  display: block;
-}
+
 .our-work {
   display: flex;
 }
@@ -331,30 +340,25 @@ img {
   letter-spacing: 0.03em;
 }
 
-.my-link .item {
+.team .link {
+  color: var(--second-border-colo);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  
 }
-.my-link .link {
-
-  color: var(--second-border-colo);
-}
-.my-link .icon {
+.team .icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.my-link .icon:hover {
-  fill: var(--primary-white-color);
-}
-.my-link .item:hover {
+.team .link:hover {
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+
 
 .futer-link .link:hover {
   background-color: var(--accent-color);
@@ -368,7 +372,9 @@ img {
   margin-left: 30px;
 }
 
-.logo-clients {
+.clients-link {
+  display: flex;
+  justify-content:center;
   padding-top: 20px;
   width: 170px;
   height: 90px;
@@ -376,20 +382,15 @@ img {
   border-radius: 4px;
   border: 1px solid var(--second-border-colo);
   box-sizing: border-box;
-  color: var(--second-border-colo);
+  fill: var(--second-border-colo);
 }
 
-.logo-clients .icon {
-  fill: currentColor;
-}
 
 .clients-link:hover {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-.logo-clients .icon:hover {
-  fill: var(--accent-color);
-}
+
 
 .main-futr-nav {
   display: flex;
@@ -441,9 +442,6 @@ img {
   width: 206px;
 }
 
-/* .futer-link .link {
-  text-decoration: none;
-} */
 .our-link .icon {
   width: 20px;
   height: 20px;
