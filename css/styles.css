@@ -330,11 +330,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.my-link .icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--second-border-colo);
-}
+
 .my-link .item {
   display: flex;
   justify-content: center;
@@ -342,6 +338,16 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  
+}
+.my-link .link {
+
+  color: var(--second-border-colo);
+}
+.my-link .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 .my-link .icon:hover {
   fill: var(--primary-white-color);
@@ -370,45 +376,18 @@ img {
   border-radius: 4px;
   border: 1px solid var(--second-border-colo);
   box-sizing: border-box;
+  color: var(--second-border-colo);
 }
 
-.clients .logo-clients:hover {
+.logo-clients .icon {
+  fill: currentColor;
+}
+
+.clients-link:hover {
   border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.client1 {
-  width: 44px;
-  height: 49px;
-  fill: var(--second-border-colo);
-}
-.client2 {
-  width: 40px;
-  height: 52px;
-  fill: var(--second-border-colo);
-}
-.client3 {
-  width: 41px;
-  height: 43px;
-  fill: var(--second-border-colo);
-}
-
-.client4 {
-  width: 80px;
-  height: 42px;
-  fill: var(--second-border-colo);
-}
-.client5 {
-  width: 59px;
-  height: 47px;
-  fill: var(--second-border-colo);
-}
-.client6 {
-  width: 89px;
-  height: 45px;
-  fill: var(--second-border-colo);
-}
-
-.logo-clients .icon:hover,
-.logo-clients .icon:focus {
+.logo-clients .icon:hover {
   fill: var(--accent-color);
 }
 
@@ -485,15 +464,14 @@ img {
   justify-content: space-between;
   margin-top: 20px;
 }
-.our-link .item:hover{
+.our-link .item:hover {
   background-color: var(--accent-color);
 }
 
 .futer-btn {
-  
   display: flex;
   margin-top: 20px;
-  flex-direction: row
+  flex-direction: row;
 }
 .windows {
   width: 358px;
