@@ -31,6 +31,8 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -150,7 +152,7 @@ img {
   margin-bottom: 93px;
 }
 
-.hero {
+.hero-img {
   padding-top: 153px;
   height: 600px;
   max-width: 1600px;
