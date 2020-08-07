@@ -61,7 +61,7 @@ img {
   align-items: center;
 }
 .page-heder {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid var(--boder-line-head);
 }
 .site-nav {
   display: flex;
