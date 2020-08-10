@@ -197,7 +197,7 @@ img {
 .hero .link {
   display: inline-block;
   border-radius: 4px;
-  padding: 13px 38px 7px 26px;
+  padding: 10px 32px;
   min-width: 200px;
 
   color: var(--primary-white-color);
